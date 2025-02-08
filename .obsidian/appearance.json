@@ -1,0 +1,12 @@
+{
+  "cssTheme": "Catppuccin",
+  "enabledCssSnippets": [
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "dashboard",
+    "dim-support-files",
+    "dailynote"
+  ],
+  "theme": "obsidian",
+  "accentColor": "#b86123"
+}

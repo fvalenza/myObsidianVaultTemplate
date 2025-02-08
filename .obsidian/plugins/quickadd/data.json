@@ -1,0 +1,416 @@
+{
+  "choices": [
+    {
+      "id": "46b3d498-c547-4438-807f-90ef43bfefa5",
+      "name": "New cheatsheet",
+      "type": "Template",
+      "command": false,
+      "templatePath": "templates/excalicheatsheet.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "vault/2-Cheatsheets"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "92d344f0-7db3-4012-9813-2c657d89ae58",
+      "name": "New daily note",
+      "type": "Template",
+      "command": false,
+      "templatePath": "templates/excalidailynote.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{DATE:YYYY-MM-DD}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "vault/0-dailynotes"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "source",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "5855afc7-f9f1-4332-a78b-377c02ac1cee",
+      "name": "New moc",
+      "type": "Template",
+      "command": false,
+      "templatePath": "templates/excalimoc.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "newmoc"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "vault/1-MOCs"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "de4f7552-28c7-4713-80d1-0513d9367f5b",
+      "name": "New note",
+      "type": "Template",
+      "command": false,
+      "templatePath": "templates/excalinote.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Untitled"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "vault"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "source",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "5d24b38b-e501-41c2-868a-1de8db3f557e",
+      "name": "NEW",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "c539f1e5-3be1-4888-adfb-7000e0d6224a",
+          "name": "Create new cheatsheet",
+          "type": "Macro",
+          "command": false,
+          "macroId": "8e0a8759-7cb4-4eac-badf-6141dde3f74b"
+        },
+        {
+          "id": "72f36cc5-d0ce-4f4f-84b5-b553f44d438d",
+          "name": "Create new daily note",
+          "type": "Macro",
+          "command": false,
+          "macroId": "86f09829-878e-469e-896c-efec5fa03a01"
+        },
+        {
+          "id": "84816afd-5422-4602-9ee1-168d4261299a",
+          "name": "Create new moc",
+          "type": "Macro",
+          "command": false,
+          "macroId": "0fb01a2a-714d-4348-a575-bec85c4fdaee"
+        },
+        {
+          "id": "4ea6af08-2a54-46e1-bf64-184c92b41b9c",
+          "name": "Create new note ",
+          "type": "Macro",
+          "command": false,
+          "macroId": "a3afec3a-ca10-41a3-b847-6b3b07e54996"
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "4d914846-69bd-4032-9d76-3fe792bc5c28",
+      "name": "make as folder note",
+      "type": "Macro",
+      "command": true,
+      "macroId": "912761e4-a630-4bee-bfae-3da6ca219229"
+    },
+    {
+      "id": "bfa136aa-0e9a-420c-a2b7-3fd30fac7cbc",
+      "name": "open tags",
+      "type": "Macro",
+      "command": true,
+      "macroId": "2d2506c7-c85f-444a-a86d-b3ebce9e7f80"
+    },
+    {
+      "id": "0fef8a94-28e9-4876-bc2c-196fac19e1d0",
+      "name": "open search",
+      "type": "Macro",
+      "command": true,
+      "macroId": "f58c5853-4e84-4a54-8269-51b06b5db53d"
+    },
+    {
+      "id": "8e3f23b4-8cf3-45a3-a32a-84641ca6a408",
+      "name": "open_outlook",
+      "type": "Macro",
+      "command": true,
+      "macroId": "3b53e698-292c-4cfb-825f-ce7f64066c8c"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Create new daily note",
+      "id": "86f09829-878e-469e-896c-efec5fa03a01",
+      "commands": [
+        {
+          "name": "New daily note",
+          "type": "Choice",
+          "id": "a35d27ca-187f-4940-ad32-aaa4338ac924",
+          "choiceId": "92d344f0-7db3-4012-9813-2c657d89ae58"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "b78fe040-f761-479e-8fad-859d83a21ca3",
+          "time": 100
+        },
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "d6c298e7-5292-4d90-a584-49801f9d1dab",
+          "commandId": "folder-notes:create-folder-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Create new note ",
+      "id": "a3afec3a-ca10-41a3-b847-6b3b07e54996",
+      "commands": [
+        {
+          "name": "New note",
+          "type": "Choice",
+          "id": "9383a69d-2774-4f9d-a040-f929f4ccf1dd",
+          "choiceId": "de4f7552-28c7-4713-80d1-0513d9367f5b"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "47fb244a-b7bf-4fa6-a3a2-58fbb748e9d7",
+          "time": 100
+        },
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "da49bd26-659e-488f-bb6c-814c3323240a",
+          "commandId": "folder-notes:create-folder-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Create new moc",
+      "id": "0fb01a2a-714d-4348-a575-bec85c4fdaee",
+      "commands": [
+        {
+          "name": "New moc",
+          "type": "Choice",
+          "id": "4d69ec31-00b7-44c6-aa63-bd9fdbd25f93",
+          "choiceId": "5855afc7-f9f1-4332-a78b-377c02ac1cee"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "0f5a9001-b9d5-49dd-aecd-0f518db46695",
+          "time": 100
+        },
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "e93b56c2-c6a7-4cef-8506-cb1f406c13e9",
+          "commandId": "folder-notes:create-folder-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Create new cheatsheet",
+      "id": "8e0a8759-7cb4-4eac-badf-6141dde3f74b",
+      "commands": [
+        {
+          "name": "New cheatsheet",
+          "type": "Choice",
+          "id": "7326835d-3ecc-4aad-88dd-5dd1bd996d0b",
+          "choiceId": "46b3d498-c547-4438-807f-90ef43bfefa5"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "13655713-c26e-4610-8818-71cb72fb108c",
+          "time": 100
+        },
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "97967078-2221-4f4f-ba93-ef5304862ef7",
+          "commandId": "folder-notes:create-folder-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "make as folder note",
+      "id": "912761e4-a630-4bee-bfae-3da6ca219229",
+      "commands": [
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "7ac42f4f-6539-4736-b56e-14a5ff4153a6",
+          "commandId": "folder-notes:create-folder-note"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open tags",
+      "id": "2d2506c7-c85f-444a-a86d-b3ebce9e7f80",
+      "commands": [
+        {
+          "name": "open_tags",
+          "type": "UserScript",
+          "id": "e98c611b-213c-4ae7-bf27-88b9d3625f0d",
+          "path": "scripts/open_tags.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open search",
+      "id": "f58c5853-4e84-4a54-8269-51b06b5db53d",
+      "commands": [
+        {
+          "name": "open_search",
+          "type": "UserScript",
+          "id": "e13ce684-c8ab-4985-a26e-41bf3d29d423",
+          "path": "scripts/open_search.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "open_outlook",
+      "id": "3b53e698-292c-4cfb-825f-ce7f64066c8c",
+      "commands": [
+        {
+          "name": "open_outlook",
+          "type": "UserScript",
+          "id": "aa2212e3-ca18-4ded-8592-066120d74ed1",
+          "path": "scripts/open_outlook.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "templates",
+  "announceUpdates": true,
+  "version": "1.11.5",
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4-turbo",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000
+          }
+        ]
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true
+  }
+}
