@@ -103,7 +103,7 @@
       "folder": {
         "enabled": true,
         "folders": [
-          "vault"
+          "vault/2-notes"
         ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
