@@ -237,3 +237,7 @@ All daily notes will go in the daily-notes folder.
 Other settings:
 
 Hotkey `ctrl + E` for reading view / source mode
+
+# Sources that helped build this vault
+https://www.youtube.com/watch?v=-5IcgqlwYMA
+https://willcodefor.beer/posts/dataviewio

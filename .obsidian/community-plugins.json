@@ -13,5 +13,7 @@
   "quickadd",
   "editing-toolbar",
   "blockier",
-  "slash-commander"
+  "slash-commander",
+  "customjs",
+  "templater-obsidian"
 ]

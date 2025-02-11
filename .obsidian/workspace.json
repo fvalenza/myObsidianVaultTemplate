@@ -4,18 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a5b216650655155a",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e4876a163e56dba5",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Dashboard.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Dashboard"
@@ -95,39 +96,6 @@
             }
           },
           {
-            "id": "c6a598ce64247b20",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Dashboard.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Dashboard"
-            }
-          },
-          {
-            "id": "568176cd118ca384",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Dashboard.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Dashboard"
-            }
-          },
-          {
             "id": "4c3d514c4deb0f92",
             "type": "leaf",
             "state": {
@@ -171,8 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,56 +151,58 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "homepage:Open homepage": false,
-      "callout-manager:Insert Callout": false
+      "callout-manager:Insert Callout": false,
+      "templater-obsidian:Templater": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e4876a163e56dba5",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Mindmap/Mindmap.md",
-    "excalidraw/Drawing 2025-01-28 23.21.13.md",
-    "vault/3-notes/test notmoc.md",
-    "vault/1-MOCs/moc1.md",
-    "vault/How-to-build-this-vault/How-to-build-this-vault.md",
-    "vault/testClem/testClem.md",
-    "vault/3-notes",
-    "vault/3-notes/NoteFlo/NoteFlo.md",
-    "excalidraw/icons.excalidrawlib",
-    "excalidraw/Unconfirmed 475989.crdownload",
-    "excalidraw/UML-ER-library.excalidrawlib",
-    "excalidraw/Unconfirmed 823868.crdownload",
-    "excalidraw/gantt.excalidrawlib",
-    "excalidraw/Unconfirmed 115080.crdownload",
-    "excalidraw/uml-library-activity-diagram.excalidrawlib",
-    "excalidraw/Unconfirmed 330114.crdownload",
-    "Dashboard.md",
-    "excalidraw/lo-fi-wireframing-kit.excalidrawlib",
-    "vault/3-notes/NoteFlo/NoteFlo.svg",
-    "vault/CLEMENT/CLEMENT.md",
-    "vault/CLEMENT/IMG-20250204135805852.png",
-    "vault/0-dailynotes/2025-02-04/2025-02-04.md",
-    "vault/0-dailynotes/2025-02-02/2025-02-02.md",
-    "vault/testClem/IMG-20250202001234385.png",
-    "vault/0-dailynotes/2025-01-31.md",
-    "Search.md",
-    "Tags.md",
-    "templates/excalidailynote.md",
-    "templates/basic-excalinote.md",
-    "vault/Untitled2/Untitled2.md",
-    "vault/2-Cheatsheets/toto/toto.md",
-    "templates/excalinote.md",
-    "vault/test template excalinote manually made into folder note/test template excalinote manually made into folder note.md",
-    "templates/excalimoc.md",
+    "vault/1-MOCs/Sport/Sport.md",
     "templates/excalidashboard.md",
-    "templates/excalicheatsheet.md",
+    "Dashboard.md",
     "templates/dashboard.md",
-    "Untitled 1.md",
-    "vault/0-dailynotes/2025-01-31/2025-01-31.md",
+    "vault/0-dailynotes/2025-02-08/2025-02-08.md",
+    "vault/0-dailynotes/2025-02-02/2025-02-02.md",
+    "vault/0-dailynotes/2025-02-11/2025-02-11.md",
+    "vault/0-dailynotes/2025-02-11.md",
+    "vault/2-notes/Velo/Velo.md",
+    "vault/How-to-build-this-vault/How-to-build-this-vault.md",
+    "vault/2-notes/seuils_strategies_courses/seuils_strategies_courses.md",
+    "templates/excalimoc.md",
+    "templates/excalidailynote.md",
+    "scripts/te",
+    "vault/0-dailynotes/2025-02-12/2025-02-12.md",
+    "vault/0-dailynotes/2025-02-12",
+    "scripts/recursive_backlinks_lastupdate.js",
+    "scripts/recursive_backlinks_lastupdate",
+    "vault/2-notes/test/test.md",
+    "vault/2-notes/test",
+    "vault/0-dailynotes/2025-02-11",
+    "vault/2-notes/CAP/CAP.md",
+    "scripts/MOC_tasks_generic.js",
+    "vault/1-MOCs/obsidian/obsidian.md",
+    "templates/excalicheatsheet.md",
+    "vault/1-MOCs/moc1.md",
+    "templates/templater.notice.md",
+    "scripts/MOC_tasks.js",
+    "scripts/MOC_Tasks.js",
+    "templates/excalinote.md",
+    "scripts/MOC_Backlinks.js",
+    "vault/1-MOCs/neovim/neovim.md",
+    "scripts/saved-codeblock-snippets.md",
+    "scripts/Untitled.md",
+    "vault/1-MOCs/Bricolage/Bricolage.md",
+    "vault/1-MOCs/WestCoast/WestCoast.md",
+    "vault/0-dailynotes/2025-02-08/IMG-20250208235645066.png",
+    "vault/3-notes/NoteFlo/NoteFlo.svg",
+    "vault/CLEMENT/IMG-20250204135805852.png",
+    "vault/testClem/IMG-20250202001234385.png",
     "vault/How-to-build-this-vault/IMG-20250130235529919.png",
     "vault/How-to-build-this-vault/IMG-20250208213847925.png",
     "vault/How-to-build-this-vault/IMG-20250208213847892.png",
     "vault/How-to-build-this-vault/IMG-20250208213847832.png",
     "obsidian-vault-windows-layout.png",
-    "vault/0-dailynotes/2025-01-30.svg",
-    "vault/0-dailynotes/IMG-20250130230659968.svg"
+    "vault/0-dailynotes/2025-01-30.svg"
   ]
 }

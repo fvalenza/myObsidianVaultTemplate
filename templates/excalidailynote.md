@@ -5,28 +5,54 @@ tags:
 cssclasses:
   - daily
 excalidraw-open-md: true
+type: daily
 ---
 
-
-
-
-
-# TODOs
+# TODO
 
 
 
 
 
-# Reunions
-- [ ] task 1
-- [ ] task 2
-- [ ] task3 
-## Sujet 1
+# Meetings
+
+##  Meeting 1
 
 blablabla
-## Sujet reu2
+
+## Meeting 2
 
 blablabla
+
+# Notes created today
+
+> [!NOTE|no-icon|no-title]
+> 
+> ```dataview
+> TABLE WITHOUT ID
+> file.link AS "Note Name"
+>  FROM ""
+> WHERE file.cday = date("<%tp.date.now('YYYY-MM-DD')%>") AND regexmatch("\d{4}-\d{2}-\d{2}", file.name) = false
+> SORT file.ctime desc
+> ```
+
+
+# Notes last touched today
+
+> [!NOTE|no-icon|no-title]
+> ```dataview
+> TABLE WITHOUT ID
+> file.link AS "Note Name", file.mtime AS " Last Updated"
+>  FROM ""
+> WHERE file.mday = date("<%tp.date.now('YYYY-MM-DD')%>")
+> SORT file.mtime desc
+> ```
+
+
+
+
+
+
 
 
 

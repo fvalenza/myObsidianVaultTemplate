@@ -8,6 +8,14 @@ excalidraw-open-md: true
 ---
 
 
+> [!NOTE] Backlinks
+> ```dataviewjs
+> const note_backlinks = await cJS("note_backlinks");
+> await note_backlinks.getBacklinks(dv);
+> ```
+
+
+
 
 
 excalinote template

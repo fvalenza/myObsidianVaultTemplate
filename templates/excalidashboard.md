@@ -4,156 +4,85 @@ tags:
   - excalidraw
 cssclasses:
   - dashboard
-  - wide-page:
 excalidraw-open-md: true
 ---
-
->[!info]+ MOCs
-> ```dataview
->  List from "vault"
->  Where type = "moc"
->  ```
-
-> [!info]+ TODOs
-> > [!multi-column]
-> > > [!info] Dailies
-> > > ```dataviewjs 
-> > > let notes = dv.pages('"vault/0-dailynotes"').map(p => p.file.path);
-> > > for (let note of notes) {
-> > > 	let page = dv.page(note);
-> > > 	let tasks = page.file.tasks.where(t => !t.completed);
-> > > 	if (tasks.length > 0) {
-> > > 		dv.taskList(tasks);
-> > > 	}
-> > > }
-> > > ```  
-> >
-> > > [!info] MOC1
-> > > ```dataviewjs  
-> > >  let theMOC = "moc1"
-> > > let notes = dv.pages(`[[${theMOC}]]`).map(page => page.file.path);
-> > > for (let note of notes) {
-> > > 	if(dv.page(note).file.tasks.where(t => !t.completed).length > 0) {
-> > > 			dv.taskList(dv.page(note).file.tasks .where(t => !t.completed));
-> > > 		}
-> > > 	}
-> > > ```  
-
-
-
-
-
-
-> [!info]+ Recent Files
-> > [!multi-column]
-> > > [!info] Last updated  
-> > > ```dataview  
-> > > List  
-> > > From ""  
-> > > sort file.mtime Desc  
-> > > Limit 5  
-> > > ```  
-> >
-> > > [!info] Last created  
-> > > ```dataview  
-> > > List  
-> > > From ""  
-> > > sort file.ctime Desc  
-> > > Limit 5  
-> > > ```  
-<!-- > > 
-> > > [!info] Last Opened  
-> > > `$=dv.list(app.workspace.lastOpenFiles.map(x=>dv.fileLink(x)))`
--->
-
-<!-- TODO Fix Last Opened just above.
-Last openFiles inline JS:
-`$=dv.list(app.workspace.lastOpenFiles.map(x=>dv.fileLink(x)))`
-or
-`$=dv.list(app.workspace.lastOpenFiles)`
--->
-
->[!info]+ Not MOCed files
-> ```dataview
->  List from "vault"
->  Where type != "moc" and !any(filter(file.outlinks, (link) => contains(link.type, "moc")))
->  ```
-
-
 # MOCs
 
 ```dataview
-List from "vault"
-Where type = "moc"
+TABLE WITHOUT ID
+file.link AS "Note Name", file.mtime AS " Last Updated", length(file.inlinks) AS "LINKS"
+FROM "vault/1-MOCs"
+WHERE type = "moc"
+SORT file.mtime desc
+limit 10
 ```
 
 
-# TODOs
 
-> [!multi-column]
-> > [!summary] Dailies
-> > ```dataviewjs 
-> > let notes = dv.pages('"vault/0-dailynotes"').map(p => p.file.path);
-> > for (let note of notes) {
-> > 	let page = dv.page(note);
-> > 	let tasks = page.file.tasks.where(t => !t.completed);
-> > 	if (tasks.length > 0) {
-> > 		dv.taskList(tasks);
-> > 	}
-> > }
-> > ```  
->
-> > [!summary] MOC1
-> > ```dataviewjs  
-> >  let theMOC = "moc1"
-> > let notes = dv.pages(`[[${theMOC}]]`).map(page => page.file.path);
-> > for (let note of notes) {
-> > 	if(dv.page(note).file.tasks.where(t => !t.completed).length > 0) {
-> > 			dv.taskList(dv.page(note).file.tasks .where(t => !t.completed));
-> > 		}
-> > 	}
-> > ```  
+# Tasks
+
+## Dailies Tasks
+
+> [!NOTE|no-icon|no-title] 
+> ```dataviewjs 
+> let notes = dv.pages('"vault/0-dailynotes"').map(p => p.file.path);
+> for (let note of notes) {
+> 	let page = dv.page(note);
+> 	let tasks = page.file.tasks.where(t => !t.completed);
+> 	if (tasks.length > 0) {
+> 		dv.taskList(tasks);
+> 	}
+> }
+> ```  
 
 
 
 
-# Recent Files
+## Sport Tasks
 
-> [!multi-column]
-> > [!info] Last updated  
-> > ```dataview  
-> > List  
-> > From ""  
-> > sort file.mtime Desc  
-> > Limit 5  
-> > ```  
->
-> > [!summary] Last created  
-> > ```dataview  
-> > List  
-> > From ""  
-> > sort file.ctime Desc  
-> > Limit 5  
 
-<!-- > > 
-> > > [!info] Last Opened  
-> > > `$=dv.list(app.workspace.lastOpenFiles.map(x=>dv.fileLink(x)))`
--->
+> [!NOTE|no-icon|no-title] 
+> ```dataviewjs
+> window.searchedFileName = "Sport.md";
+> dv.view("scripts/MOC_tasks_generic")
+> ```
 
-<!-- TODO Fix Last Opened just above.
-Last openFiles inline JS:
-`$=dv.list(app.workspace.lastOpenFiles.map(x=>dv.fileLink(x)))`
-or
-`$=dv.list(app.workspace.lastOpenFiles)`
--->
+
+# Last updated files
+
+```dataview
+TABLE WITHOUT ID
+file.link AS "Note Name", file.mtime AS " Last Updated", length(file.inlinks) AS "LINKS"
+FROM ""
+SORT file.mtime desc
+limit 10
+```
+
+# Last created files
+
+```dataview
+TABLE WITHOUT ID
+file.link AS "Note Name", file.ctime AS " Last Created", length(file.inlinks) AS "LINKS"
+FROM ""
+SORT file.ctime desc
+limit 10
+```
+
+
+
+
 
 
 # Not MOCed files
-```dataview
-List from "vault"
-Where type != "moc" and !any(filter(file.outlinks, (link) => contains(link.type, "moc")))
-```
 
+```dataview
+TABLE WITHOUT ID
+file.link AS "Note Name", file.ctime AS " Last Created", length(file.inlinks) AS "LINKS"
+FROM "vault/2-notes"
+WHERE type != "moc" and !any(filter(file.outlinks, (link) => contains(link.type, "moc")))
+SORT file.ctime desc
+limit 10
+```
 
 %%
 # Excalidraw Data

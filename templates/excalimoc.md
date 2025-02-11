@@ -6,50 +6,49 @@ tags:
 excalidraw-open-md: true
 ---
 
->[!info]+ Map Of Content
-> ```dataview
-> list from [[]] and !outgoing([[]])
-> sort file.name asc
-> ```
 
-<!-- 
-The Map Of Content files can also be gathered with this dataviewjs block
--->
-<!--
-```dataviewjs
-let linkedFiles = dv.pages(`[[${this.currentFilePath}]]`).map(page => page.file.path);
-
-dv.list(linkedFiles)
-```
--->
-
-
-
->[!info]+ Tasks
+Map of Content 
+---
+<!-- 3 nested levels only  -->
+> [!NOTE|no-icon|no-title] Map of Content
 > ```dataviewjs
-> let notes = dv.pages(`[[${this.currentFilePath}]]`).map(page => page.file.path);
-> for (let note of notes) {
-> 	if(dv.page(note).file.tasks.where(t => !t.completed).length > 0) {
-> 		dv.taskList(dv.page(note).file.tasks .where(t => !t.completed));
-> 	}
-> }
+> const note_backlinks = await cJS("note_backlinks");
+> await note_backlinks.getBacklinks(dv);
 > ```
 
 
 Tasks
 ---
-```dataviewjs
-let notes = dv.pages(`[[${this.currentFilePath}]]`).map(page => page.file.path);
 
-for (let note of notes) {
-	if(dv.page(note).file.tasks.where(t => !t.completed).length > 0) {
-		dv.taskList(dv.page(note).file.tasks .where(t => !t.completed));
-	}
-}
+> [!NOTE|no-icon|no-title] 
+> ```dataviewjs
+> window.searchedFileName = dv.current().file.name;
+> dv.view("scripts/MOC_tasks_generic")
+> ```
+
+
+# Last updated files 
+<!-- 1 nested levels only  -->
+```dataview
+TABLE WITHOUT ID
+file.link AS "Note Name", file.mtime AS " Last Updated", length(file.inlinks) AS "LINKS"
+FROM ""
+WHERE contains(this.file.inlinks, file.link)
+SORT file.mtime desc
+limit 10
 ```
 
 
-
+# Last created files 
+<!-- 1 nested levels only  -->
+```dataview
+TABLE WITHOUT ID
+file.link AS "Note Name", file.ctime AS " Last Created", length(file.inlinks) AS "LINKS"
+FROM ""
+WHERE contains(this.file.inlinks, file.link)
+SORT file.ctime desc
+limit 10
+```
 
 
 

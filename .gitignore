@@ -1,0 +1,7 @@
+vault/*
+# Do not ignore the How-To-Build/ directory and its contents
+!vault/How-to-build-this-vault/
+!vault/How-to-build-this-vault/**
+
+
+.obsidian/workspace.json
