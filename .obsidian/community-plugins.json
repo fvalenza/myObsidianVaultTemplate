@@ -15,5 +15,6 @@
   "blockier",
   "slash-commander",
   "customjs",
-  "templater-obsidian"
+  "templater-obsidian",
+  "edit-in-neovim"
 ]

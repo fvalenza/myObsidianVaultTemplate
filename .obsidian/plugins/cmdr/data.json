@@ -44,6 +44,12 @@
       "icon": "lucide-mail",
       "name": "QuickAdd: open_outlook",
       "mode": "any"
+    },
+    {
+      "id": "edit-in-neovim:edit-in-neovim-new-instance",
+      "icon": "lucide-edit",
+      "name": "Edit in Neovim: Open Neovim",
+      "mode": "any"
     }
   ],
   "macros": [],

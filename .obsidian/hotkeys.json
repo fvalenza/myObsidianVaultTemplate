@@ -17,5 +17,17 @@
       "key": "N"
     }
   ],
-  "editor:delete-paragraph": []
+  "editor:delete-paragraph": [],
+  "edit-in-neovim:edit-in-neovim-new-instance": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "edit-in-neovim:edit-in-neovim-close-instance": [
+    {
+      "modifiers": [],
+      "key": "F6"
+    }
+  ]
 }
